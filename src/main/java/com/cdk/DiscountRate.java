@@ -3,12 +3,25 @@ package com.cdk;
 import java.io.Serializable;
 import java.util.Objects;
 
+/**
+ * @author Pravesh Lodwal
+ * This class represents to each discount entity
+ */
 public class DiscountRate implements Serializable {
 
+  /**
+   * This filed represent minimum value of amount for discount
+   */
   private int minimumAmount;
 
+  /**
+   * This filed represent maximum value of amount for discount
+   */
   private int maximumAmount;
 
+  /**
+   * This filed represent discount percentage
+   */
   private float discountPercentage;
 
   public DiscountRate(int minimumAmount, int maximumAmount, float discountPercentage) {
